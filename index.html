@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feliz Cumpleaños, Mamá</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Special+Elite&family=Lora:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <!-- ============ HERO ============ -->
+    <header class="hero">
+      <div class="hero__compass" aria-hidden="true">
+        <svg viewBox="0 0 100 100" class="compass-svg">
+          <circle cx="50" cy="50" r="46" class="compass-ring" />
+          <circle cx="50" cy="50" r="2.5" class="compass-dot" />
+          <path d="M50 8 L56 50 L50 92 L44 50 Z" class="compass-needle" />
+          <text x="50" y="18" class="compass-label" text-anchor="middle">
+            N
+          </text>
+        </svg>
+      </div>
+
+      <p class="hero__postmark">✈ CORREO AÉREO · PARA MAMÁ</p>
+      <h1 class="hero__title">Feliz<br />Cumpleaños</h1>
+      <p class="hero__subtitle">
+        Un pasaporte lleno de sellos.<br />Una vida entera de aventuras.
+      </p>
+
+      <a href="#carta" class="hero__scroll">
+        <span>seguí el viaje</span>
+        <span class="hero__scroll-line" aria-hidden="true"></span>
+      </a>
+    </header>
+
+    <!-- ============ CARTA / MENSAJE ============ -->
+    <section id="carta" class="letter-section">
+      <div class="letter">
+        <p class="letter__stamp-label">CON CARIÑO, DESDE CASA</p>
+        <p class="letter__date">Julio, 2026</p>
+
+        <div class="letter__body">
+          <!-- 
+          REEMPLAZÁ este texto con tu mensaje real para tu mamá.
+          Podés dejarlo tan largo o corto como quieras.
+        -->
+          <p class="letter__dropcap">Querida mamá,</p>
+          <p>
+            No sé si te lo digo tan seguido como debería, pero sos una de las
+            personas que más admiro en este mundo. Desde que tengo memoria
+            fuiste la que sostuvo todo sin pedir nada a cambio, la que
+            encontraba la manera de hacer que cualquier lugar se sintiera como
+            hogar. [Contá acá algo bien concreto: una frase que siempre dice, un
+            gesto suyo, un recuerdo específico — eso vale mucho más que
+            cualquier frase bonita.]
+          </p>
+          <p>
+            Gracias por mostrarnos el mundo con tu curiosidad y tu alegría. Esta
+            página es un pequeño mapa de todo lo que representás para nosotros.
+          </p>
+          <p class="letter__signoff">Con todo nuestro amor,<br />Tu familia</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALERÍA DE FOTOS ============ -->
+    <section class="gallery-section">
+      <p class="section-eyebrow">ÁLBUM DE VIAJE</p>
+      <h2 class="section-title">Postales de recuerdos</h2>
+
+      <div class="postcard-board">
+        <!--
+        Las fotos viven en assets/1.jpg ... assets/6.jpg.
+        Cambiá el "alt" de cada una por una descripción real (esto ayuda a
+        accesibilidad y SEO) y el texto del figcaption por el lugar o recuerdo.
+      -->
+        <figure class="postcard postcard--rot-1">
+          <img
+            class="postcard__img"
+            src="assets/1.jpeg"
+            alt="Foto de mamá 1"
+            loading="lazy"
+          />
+          <figcaption>Escribí acá el lugar o el recuerdo</figcaption>
+        </figure>
+
+        <figure class="postcard postcard--rot-2">
+          <img
+            class="postcard__img"
+            src="assets/2.jpeg"
+            alt="Foto de mamá 2"
+            loading="lazy"
+          />
+          <figcaption>Escribí acá el lugar o el recuerdo</figcaption>
+        </figure>
+
+        <figure class="postcard postcard--rot-3">
+          <img
+            class="postcard__img"
+            src="assets/3.jpeg"
+            alt="Foto de mamá 3"
+            loading="lazy"
+          />
+          <figcaption>Escribí acá el lugar o el recuerdo</figcaption>
+        </figure>
+
+        <figure class="postcard postcard--rot-4">
+          <img
+            class="postcard__img"
+            src="assets/4.jpeg"
+            alt="Foto de mamá 4"
+            loading="lazy"
+          />
+          <figcaption>Escribí acá el lugar o el recuerdo</figcaption>
+        </figure>
+
+        <figure class="postcard postcard--rot-5">
+          <img
+            class="postcard__img"
+            src="assets/5.jpeg"
+            alt="Foto de mamá 5"
+            loading="lazy"
+          />
+          <figcaption>Escribí acá el lugar o el recuerdo</figcaption>
+        </figure>
+
+        <figure class="postcard postcard--rot-6">
+          <img
+            class="postcard__img"
+            src="assets/6.jpeg"
+            alt="Foto de mamá 6"
+            loading="lazy"
+          />
+          <figcaption>Escribí acá el lugar o el recuerdo</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ LÍNEA DE TIEMPO ============ -->
+    <section class="route-section">
+      <p class="section-eyebrow">SU RUTA</p>
+      <h2 class="section-title">El viaje de su vida</h2>
+
+      <div class="route">
+        <div class="route__line" aria-hidden="true">
+          <svg class="route__plane" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M2 16l8-2 6-8 2 1-4 8 5 1v2l-5 1-1 4-2-1 1-6-8-2z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+
+        <!--
+        Cada .route__stop es una parada en su vida.
+        Cambiá la fecha, el lugar/título y la descripción.
+        Agregá o quitá .route__stop según cuántos momentos quieras contar.
+      -->
+        <div class="route__stop">
+          <div class="route__marker">1981</div>
+          <div class="route__card">
+            <h3>Donde empezó todo</h3>
+            <p>
+              Nació en San Francisco de Macoris, el punto de partida de esta
+              historia.
+            </p>
+          </div>
+        </div>
+
+        <div class="route__stop route__stop--right">
+          <div class="route__marker">2002</div>
+          <div class="route__card">
+            <h3>Su primera gran aventura</h3>
+            <p>
+              El comienzo de todo: se casó con papá, y juntos armaron el hogar
+              del que salieron todas nuestras propias aventuras.
+            </p>
+          </div>
+        </div>
+
+        <div class="route__stop">
+          <div class="route__marker">2003</div>
+          <div class="route__card">
+            <h3>Llega Dan Luis</h3>
+            <p>El primer nuevo pasajero se sube a su viaje.</p>
+          </div>
+        </div>
+
+        <div class="route__stop route__stop--right">
+          <div class="route__marker">2007</div>
+          <div class="route__card">
+            <h3>Llega Luis David</h3>
+            <p>La familia sigue creciendo.</p>
+          </div>
+        </div>
+
+        <div class="route__stop">
+          <div class="route__marker">2013</div>
+          <div class="route__card">
+            <h3>Llega Ambar Lucia</h3>
+            <p>Y el equipo quedó completo.</p>
+          </div>
+        </div>
+
+        <div class="route__stop route__stop--right">
+          <div class="route__marker">2013...</div>
+          <div class="route__card">
+            <h3>Su mapa personal</h3>
+            <p>Playa, montaña, ciudad o santuario — para ella el destino nunca importó tanto como quién la acompañaba. De Santo Cerro a Nueva York, lo que buscaba no era el lugar, éramos nosotros.</p>
+          </div>
+        </div>
+
+        <div class="route__stop">
+          <div class="route__marker">2026</div>
+          <div class="route__card route__card--today">
+            <h3>Hoy</h3>
+            <p>
+              Y acá estamos, celebrándote, con muchas más viajes por delante.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CIERRE ============ -->
+    <footer class="closing">
+      <svg class="closing__seal" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="42" class="seal-ring" />
+        <path
+          class="seal-heart"
+          d="M50 68 C 30 54, 22 42, 30 32 C 36 24, 48 27, 50 36 C 52 27, 64 24, 70 32 C 78 42, 70 54, 50 68 Z"
+        />
+      </svg>
+      <p class="closing__text">Te queremos, mamá.</p>
+      <p class="closing__sub">Que este año esté lleno de nuevas aventuras.</p>
+    </footer>
+  </body>
+</html>
