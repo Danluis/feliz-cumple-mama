@@ -422,6 +422,61 @@ a {
 .route__card--today h3 { color: var(--paper-light); }
 
 /* =========================================================
+   CUALIDADES / SELLOS
+   ========================================================= */
+.qualities-section {
+  padding: var(--space-6) var(--space-2);
+}
+
+.qualities-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.quality-card {
+  position: relative;
+  background: var(--paper-light);
+  padding: var(--space-3) var(--space-3) var(--space-3) 5.5rem;
+  border: 1px dashed rgba(43,33,24,0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.quality-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 26px -16px rgba(43,33,24,0.4);
+}
+
+.quality-card__mark {
+  position: absolute;
+  top: var(--space-3);
+  left: var(--space-3);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid var(--coral);
+  color: var(--coral);
+  font-family: var(--font-stamp);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-8deg);
+}
+
+.quality-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.4rem;
+}
+
+.quality-card p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* =========================================================
    CIERRE
    ========================================================= */
 .closing {
@@ -501,6 +556,10 @@ a {
 
 @media (max-width: 480px) {
   .postcard-board {
+    grid-template-columns: 1fr;
+  }
+
+  .qualities-grid {
     grid-template-columns: 1fr;
   }
 }
